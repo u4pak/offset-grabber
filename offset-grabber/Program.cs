@@ -2,11 +2,11 @@
 using CUE4Parse.FileProvider;
 using CUE4Parse.UE4.Objects.Core.Misc;
 using CUE4Parse.UE4.Versions;
-using CUE4Parse.UE4.IO;
 using CUE4Parse;
+using static offset_grabber.FortniteUtil;
 
 Console.Title = "FORTNITE HXD OFFSET GRABBER | Made by shady#9999 and owens#2519";
-var p = new DefaultFileProvider(FortniteUtil.PakPath, SearchOption.TopDirectoryOnly, false, new VersionContainer(EGame.GAME_UE5_LATEST));
+var p = new DefaultFileProvider(FortniteUtils.PakPath, SearchOption.TopDirectoryOnly, false, new VersionContainer(EGame.GAME_UE5_LATEST));
 p.Initialize();
 
 Console.WriteLine(@" _______  _______  _______  _______  _______  _______            
@@ -24,16 +24,14 @@ Console.WriteLine(@" _______  _______  _______  _______  _______  _______
 |   |_| ||   |  | ||   _   || |_|   || |_|   ||   |___ |   |  | |
 |_______||___|  |_||__| |__||_______||_______||_______||___|  |_|
 
-Created by shady#9999 with help from owens#2519.
-
-THIS PROGRAM IS FOR PRIVATE USE ONLY. DO NOT DISTRIBUTE!
+Created by shady#9999 with a lot of help from owens#2519.
 ");
 
 Console.WriteLine("\nEnter the file path below (Ex: FortniteGame/Content/Athena/Artemis/Maps/Artemis_Terrain.umap):");
 
 p.SubmitKey(new FGuid(), new FAesKey("0x0000000000000000000000000000000000000000000000000000000000000000"));
 
-Shady.IsExporting = true;
+Owen.IsExporting = true;
 
 string filePath = Console.ReadLine();
 
@@ -41,17 +39,13 @@ try
 {
     p.SaveAsset(filePath);
 }
-catch (KeyNotFoundException e)
+catch
 {
     Console.WriteLine("ERROR! The file path you entered was invalid. Please restart the program.");
     Console.WriteLine("\nPress Enter to close the program.");
     Console.ReadLine();
     return;
-};
-
-using StreamWriter offsetsFile = new("Exports\\OFFSETS.txt", append: true);
-offsetsFile.WriteLine($"Offset for \"{filePath}\":\n{Shady.Offset}\n");
-
+}
 
 Console.Clear();
 
@@ -70,18 +64,16 @@ Console.WriteLine(@" _______  _______  _______  _______  _______  _______
 |   |_| ||   |  | ||   _   || |_|   || |_|   ||   |___ |   |  | |
 |_______||___|  |_||__| |__||_______||_______||_______||___|  |_|
 
-Created by shady#9999 with help from owens#2519.
-
-THIS PROGRAM IS FOR PRIVATE USE ONLY. DO NOT DISTRIBUTE!
+Created by shady#9999 with a lot of help from owens#2519.
 ");
 
 Console.WriteLine("\nOFFSET FOUND!");
 
-Console.WriteLine($"\nMost Likely Offset:\n{Shady.OffsetList.First()}");
+Console.WriteLine($"\nFile Path:\n{Owen.Path}");
 
-Console.WriteLine("\nAll Possible Offsets:");
+Console.WriteLine("\nAll Offsets:");
 
-foreach(var offset in Shady.OffsetList)
+foreach(var offset in Owen.Offsets)
 {
     Console.WriteLine(offset);
 }

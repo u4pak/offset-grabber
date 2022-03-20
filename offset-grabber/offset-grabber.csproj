@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CUE4Parse\CUE4Parse.csproj" />
+    <ProjectReference Include="..\..\CUE4Parse\CUE4Parse.csproj" />
   </ItemGroup>
 
   <ItemGroup>

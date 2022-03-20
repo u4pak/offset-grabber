@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "offset-grabber", "offset-grabber\offset-grabber.csproj", "{27386050-1C5B-46D7-84D8-1D2D665A8CAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "offset-grabber", "offset-grabber\offset-grabber.csproj", "{27386050-1C5B-46D7-84D8-1D2D665A8CAB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CUE4Parse", "CUE4Parse\CUE4Parse.csproj", "{1E8AC828-5ABD-4377-93F5-6469D27EC3DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CUE4Parse", "..\CUE4Parse\CUE4Parse.csproj", "{8C9987D8-21DA-4164-9C16-C1BA38ED2EE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{27386050-1C5B-46D7-84D8-1D2D665A8CAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27386050-1C5B-46D7-84D8-1D2D665A8CAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27386050-1C5B-46D7-84D8-1D2D665A8CAB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1E8AC828-5ABD-4377-93F5-6469D27EC3DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1E8AC828-5ABD-4377-93F5-6469D27EC3DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1E8AC828-5ABD-4377-93F5-6469D27EC3DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1E8AC828-5ABD-4377-93F5-6469D27EC3DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C9987D8-21DA-4164-9C16-C1BA38ED2EE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C9987D8-21DA-4164-9C16-C1BA38ED2EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C9987D8-21DA-4164-9C16-C1BA38ED2EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C9987D8-21DA-4164-9C16-C1BA38ED2EE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
